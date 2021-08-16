@@ -4,7 +4,6 @@
     </NUnit>
 
     <TestRunParameters>
-        <Parameter name="browser" value="chrome"/>
         <Parameter name="type" value="local"/>
         <Parameter name="wait" value="30"/>
         <Parameter name="debug" value="false"/>

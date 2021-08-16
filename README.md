@@ -13,7 +13,6 @@ docker pull selenium/node-chrome
 * We obtain the images from an image repository called hub.docker.com using pull/push commands.
 
 ## Commands
-```
 * Setup containers defined on the docker-compose.yml: `docker-compose up -d`
 * Restart containers: `docker-compose restart`
 * Tear down the grid: `docker-compose down`
@@ -32,5 +31,19 @@ docker pull selenium/node-chrome
 ```
 dotnet new unit
 dotnet add package Selenium.WebDriver
+dotnet add package Selenium.WebDriver.ChromeDriver
+dotnet add package Selenium.Firefox.WebDriver
+dotnet add package WebDriverManager
 dotnet test
 ```
+
+## Run
+```
+docker-compose up -d --scale chrome=1
+dotnet test
+docker-compose down
+```
+
+## References
+* https://github.com/ElSnoMan/esports-automation
+* https://testautomationu.applitools.com/scaling-tests-with-docker
