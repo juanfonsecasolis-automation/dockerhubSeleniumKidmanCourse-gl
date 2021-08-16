@@ -18,7 +18,7 @@ docker pull selenium/node-chrome
 * Restart containers: `docker-compose restart`
 * Tear down the grid: `docker-compose down`
 * Stop all running containers: `docker kill $(docker ps -q)`
-* List all containers: `docker ps -a`
+* List all containers: `docker ps -a` or `docker container ls`
 * Delete all containers: `docker rm -f $(docker ps -a -q)`
 * List all images: `docker images`
 * Delete an image: `docker rmi <image>` 
@@ -27,3 +27,10 @@ docker pull selenium/node-chrome
 * See it running: `http://localhost:4444/grid/console`
 
 [!](img/gridRunning.png)
+
+## NUnit and Selenium
+```
+dotnet new unit
+dotnet add package Selenium.WebDriver
+dotnet test
+```

@@ -1,6 +1,5 @@
 version: "3"
 services:
-
         selenium-hub:
                 image: selenium/hub
                 ports:
@@ -9,7 +8,6 @@ services:
                         GRID_MAX_SESSION: 2
                         GRID_BROWSER_TIMEOUT: 300
                         GRID)TIMEOUT: 300
-
         chrome:
                 image: selenium/node-chrome
                 depends_on:
