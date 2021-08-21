@@ -26,20 +26,7 @@ docker pull selenium/node-chrome
 * List all containers: `docker ps -a` or `docker container ls`
 * Delete all containers: `docker rm -f $(docker ps -a -q)`
 * List all images: `docker images`
-* Delete an image: `docker rmi <image>` 
-
-## Swarm
-To setup a swarm:
-1. Access to more than one machine.
-2. Know their IPs and network successfully.
-3. Initialize a swarm and make our PC a manager: `docker swarm init`
-4. Add a worker to the swarm by running on the other machine the command provided by swarm init: `docker swarm join --token <tokenProvided> 192.168.2.14:2377` ()
-5. To add a manager to the swarm: `docker swarm join-token manager` and follow the instructions.
-6. Now you have all the nodes connected (`docker node ls`), deploy the swarm by running `docker stack deploy`
-7. Run your tests against Selenium Grid.
-
-
-
+* Delete an image: `docker rmi <image>` v
 ## The grid
 * See it running: `http://localhost:4444/grid/console`
 
@@ -60,6 +47,20 @@ docker-compose up -d --scale chrome=1
 dotnet test
 docker-compose down
 ```
+
+## Swarm
+To setup a swarm:
+1. Access to more than one machine.
+2. Know their IPs and network successfully.
+3. Initialize a swarm and make our PC a manager: `docker swarm init`
+4. Add a worker to the swarm by running on the other machine the command provided by swarm init: `docker swarm join --token <tokenProvided> 192.168.2.14:2377` ()
+5. To add a manager to the swarm: `docker swarm join-token manager` and follow the instructions.
+6. Now you have all the nodes connected (`docker node ls`), deploy the swarm by running `docker stack deploy`
+7. Run your tests against Selenium Grid.
+
+## Next steps
+* Trying to create own clusters and deploy services on them using swarm.
+* Explore orchestration tools like Kubernetes and Jenkins.
 
 ## References
 * https://github.com/ElSnoMan/esports-automation
