@@ -65,3 +65,7 @@ To setup a swarm:
 ## 5 References
 * https://github.com/ElSnoMan/esports-automation
 * https://testautomationu.applitools.com/scaling-tests-with-docker
+
+# 6 Author
+2021 Juan Fonseca.
+
