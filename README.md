@@ -30,7 +30,7 @@ docker pull selenium/node-chrome
 ## The grid
 * See it running: `http://localhost:4444/grid/console`
 
-[!](img/gridRunning.png)
+![](img/gridRunning.png)
 
 ## NUnit and Selenium
 ```
