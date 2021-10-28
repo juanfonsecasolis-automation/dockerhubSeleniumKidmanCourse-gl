@@ -1,5 +1,5 @@
 # kidmanDockerSeleniumCourse
-Repository to implement the homeworks requested on https://testautomationu.applitools.com/scaling-tests-with-docker.
+2021 Juan Fonseca. Repository to implement the homeworks requested on https://testautomationu.applitools.com/scaling-tests-with-docker.
 
 ## 1 Pre-requisites
 ```
@@ -66,6 +66,4 @@ To setup a swarm:
 * https://github.com/ElSnoMan/esports-automation
 * https://testautomationu.applitools.com/scaling-tests-with-docker
 
-# 6 Author
-2021 Juan Fonseca.
 
